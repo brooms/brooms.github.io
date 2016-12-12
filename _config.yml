@@ -5,7 +5,7 @@ locale: en_US
 description: Software Engineering, Motorcycles & Life with a solid dose of 1980s flair
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+url: http://brooms.io
 
 # Jekyll configuration
 
