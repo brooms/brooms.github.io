@@ -29,7 +29,7 @@ No-cut sliders, on the other hand and in my opinion, are an engineering hack... 
 
 But all this is just my opinion, if you have a major accident neither the cut or no-cut sliders are likely to protect your frame from damage and will both likely shear off. Having said that, at the Phillip Island track day there was one high-side on a GSXR-750 and the cut sliders did their job and protected the frame from damage. However, this was coming down out of Lukey Heights into MG so this was more of a slow to moderate speed fall.
 
-![alt text](../../images/gsxr600-sliders.jpg "Cut sliders from Motovation")
+![alt text](../../images/slider_install/gsxr600-sliders.jpg "Cut sliders from Motovation")
 
 The Motovation cut sliders are great, I bought them after reading lots of motorcycling forums with many people recommending them. They ship via express post for a moderate fee to Australia. It was fast and painless to get them. They look good and have a nice low-profile shape. Would I buy them again? Yes, most definitely. I actually purchased the Axle and Fork sliders too.
 
@@ -53,7 +53,7 @@ The Motovation cut sliders are great, I bought them after reading lots of motorc
 ### Step 1: Right Fairing Removal
 
 
-![alt text](../../images/bike_stand.jpg "Anderson stands are fantastic")
+![alt text](../../images/slider_install/bike_stand.jpg "Anderson stands are fantastic")
 
 Before you start, if you have a rear stand I highly recommend putting your bike onto the stand. It will make your life a lot easier. A front stand will just get in the way when you try to remove the front fairings.
 
@@ -104,10 +104,56 @@ Finally, tighten the hex bolts for the fairing to hand tightness. Don't over-tig
 
 Note: Don't remove your bottle/scissor jack yet. You have to do the other side.
 
-![alt text](../../images/slider_right_side.jpg "Right done")
+![alt text](../../images/slider_install/slider_right_side.jpg "Right done")
 
-![alt text](../../images/slider_right_side2.jpg "They have a pretty low profile")
+![alt text](../../images/slider_install/slider_right_side2.jpg "They have a pretty low profile")
 
 ### Step 5: Repeat for Left Side
 
+Now it's just a matter of repeating the same process for the left side. The left slider is actually a slightly different shape. This is due to the difference in depth from the fairing to the frame. But once it is installed both will look completely symmetrical.
+
+Unfortunately, my smooth installation process went awry here. I had the fairing off (before cutting a hole) and tested the slider installation by screwing in the bolt into the engine mount hole. I managed to cross thread it a couple of times then thought I had the bolt in properly. About 3/4s of the way in, it cross threaded badly. I knew better than continuing with it and it was a complete noob mistake. I was unable to remove it and it required all my strength, quarter turns at a time to remove the damn thing.
+
+End result - stripped engine mount bolt hole. Not a complete disaster and solvable.
+
+![alt text](../../images/slider_install/slider_right_stripped.jpg "Stripped engine mount")
+
+The side-on shot above shows the frame hole, through to the engine mount with the exhaust headers sitting behind.
+
+The shot below shows the stripped engine mount hole, through the frame.
+
+![alt text](../../images/slider_install/slider_right_stripped1.jpg "Stripped engine mount hole")
+
 ### Problems and Resolution
+
+#### Solution 1 - Re-tapping and re-threading the hole
+
+Being 1 week out from the Phillip Island track day, I initially panicked. But set about re-threading the engine mount hole. This required drilling out the damaged engine mount thread through the frame. Then re-tapping with a [M10 thread tap kit](https://adelaidetools.com.au/prothread-m10-x-1-25-thread-repair-kit.html), and using a helicoil to re-thread the engine mount bolt hole.
+
+I was extremely careful not to touch the frame with the drill piece, going up in size a few mms at a time, using plenty of lubricant in the hole to assist.
+
+Unfortunately, even though I was able to drill out the old thread, the thread tap kit was unable to fit through the engine mount hole into the engine case.
+
+#### Solution 2 - Pivoting the engine down
+
+To re-tap the engine mount bolt hole, the engine must be dropped down below the frame to gain free access to the bolt hole. This process is quite involved, but can be done by un-doing a few engine mounts, removal of the airbox and loosening the bottom engine mount, then pivoting the engine down. To do this you need a special "castle nut" tool to remove the engine mount lock-nuts. This is pretty common on most Japanese motorcycles and the tool can either be made from an old 22-24mm socket and an angle grinder or be bought off eBay from China.
+
+I really didn't have time for either option being 1-week out from my trip, so enter Solution 3.
+
+#### Solution 3 - Replacement high-tensile bolt, washer and self-locking nut
+
+The solution I chose, and what worked well, was to source a replacement high-tensile bolt that was slightly longer and could pass through the slider, frame and engine mount while still having clearance to the exhaust headers. I sourced a 150mm high tensile-bolt from [Fasteners Australia](http://fastenersaustralia.com.au), a couple of washers and lock-nuts. This may, in fact, be stronger than the original engine mount. I bounced a few emails around with my [motorcycle workshop](http://garagemotorcycles.com.au) before doing this.
+
+I also decided at purchase time to get some stud locker, however, using stud locker instead of blue loctite is **NOT** a good idea. You'll never be able to remove the damn thing. The blue loctite is sufficient.
+
+![alt text](../../images/slider_install/slider_replacement_bolts.jpg "Replacement M10 bolts")
+
+The purpose of the washers is obviously to evenly distribute load across the inside of the engine mount. I don't want to damage the engine block. The lock-nut will help to lock against the engine mount and resist any flex, likewise the high tensile bolt. I applied blue loctite to the thread before tightening the nut. I held the nut on one side with a spanner and then tightened the slider with a torque wrench with hex key head in the other to 40lb/ft.
+
+![alt text](../../images/slider_install/slider_bolt_placement.jpg "Bolt placement")
+
+### Conclusion
+
+My solution to the engine mount problem worked perfectly and resisted vibration, flex and stress at Phillip Island which is probably just about the most it will ever be put under (unless I crash). I do plan on having the engine mount re-threaded at my next visit to the workshop so this is still only a temporary solution. However, it would probably be ok as a permanent solution - it's just that I like things to be done properly.
+
+The slider install was a success, eventually. I'd certainly be more careful next time but I am super happy with the Motovation sliders, they look absolutely fantastic and really enjoyed installing them with a mate of mine. Even though there was a bit of panic with the stripped engine mount bolt hole, coming up with a successful, working solution was quite rewarding.
