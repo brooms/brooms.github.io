@@ -6,6 +6,7 @@ author: andy_motovation
 categories: blog
 excerpt:
 share: true
+comments: true
 tags: [motorcycling]
 image:
   feature: slider_header.jpg
