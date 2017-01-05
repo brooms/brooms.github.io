@@ -16,6 +16,8 @@ The client we were working for was primarily a Java shop and had an existing eve
 
 Each micro-service consisted of a set of event processors which would receive an event, process it in a pipeline and sink the event data to an data source or application/system. A request would be received by each service, pass through a dynamic content and event type router (within each service and an actor itself) and be passed off to a master actor which was able to create specific child actors to handle each stage of event processing.
 
+![alt text](../../images/akka_metrics/Akka_Service.png "Micro-service anatomy")
+
 A natural extension to this was the leverage the Akka framework to monitor each micro-service. There really is no difference between processing a business event and processing a system generated event. Akka actors together with Akka futures are excellent patterns for periodically collecting up a set of system metrics and pushing those metrics to either a central registry or external data sink (such as a Splunk REST interface) to enable near real-time monitoring of micro-service health.
 
 ### Metrics Actor
