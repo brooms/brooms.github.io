@@ -8,7 +8,7 @@ image:
 
 # About
 
-That's me... gripping too hard, clenching and not shifting my weight properly. I'm still learning. I'm still learning about life and about software engineering.
+That's me... gripping too hard and not shifting my weight properly. I'm still learning. I'm also still learning about life and about software engineering.
 
 I've been working in the industry for over 10 years now, starting in defense for the Department of Science and Technology here in Australia. From there I moved into the private sector working for a large utilities company in the early 2000's developing an Enterprise Service Bus from the ground up using CORBA, Java and a custom DSL for service routing.
 
