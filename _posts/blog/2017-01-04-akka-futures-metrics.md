@@ -273,6 +273,8 @@ private Boolean collectMetrics() {
 
 The final step is to load our configured metric publication endpoints to publish our metrics to a data sink such as a web service. An alternative to loading metric endpoints is to load a number of handlers that can be called sequentially or in parallel to handle publication for us. In our solution, we only required publication to a single endpoint (Splunk web service) and so took the simple URL configuration approach.
 
+Here we dynamically load metric endpoints from an external central properties file using the [Archaius framework](https://github.com/Netflix/archaius) from Netflix. Archaius has the ability to dynamically check for changes to properties files during runtime, pick up and load those changes accordingly.
+
 ```java
 // Load and determine publication endpoints using Archaius
 final DynamicBooleanProperty publishMetricsProp =
