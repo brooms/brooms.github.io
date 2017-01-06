@@ -423,6 +423,6 @@ public class MetricsActor extends UntypedActor {
 ```
 
 
-So far so good, it is in our environment and performing well. Each micro-service sinks metrics to Splunk every 5 minutes and is continually monitored by the production support team. In addition to direct publication, we expose a RESTful interface to the central metrics registry to allow for on-demand monitoring of each service.
+So far so good, it is in our environment and performing well. Each micro-service sinks metrics to Splunk every 5 seconds and is continually monitored by the production support team. In addition to direct publication, we expose a RESTful interface to the central metrics registry to allow for on-demand monitoring of each service.
 
 I am completely sold on the Akka framework as more than just an implementation of the Actor model. It is a well documented, mature framework and features like the monadic functional futures API are great for constructing concurrent processing pipelines. Akka has certainly surprised me, it is full of interesting features. I am currently exploring data synchronisation and state sharing from within a cluster of competing consumers and will hopefully post on this soon.
