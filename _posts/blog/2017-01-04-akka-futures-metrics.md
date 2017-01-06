@@ -12,9 +12,13 @@ image:
   feature: akka_actors_header.jpg
 ---
 
-The client we were working for was primarily a Java shop and had an existing event-driven enterprise middleware platform. We settled on the Akka framework to act as the engine room for each micro-service, not just because of the framework's ability for making concurrency easy but also because of the ease of scalability (horizontal and vertical) and the ability to cluster.
+The client we were working for was implementing a new major system in a program of work aimed to migrate legacy systems off an aging and expensive mainframe. As part of this program of work we were tasked with producing a set of micro-services to facilitate reliable, scalable and fault tolerant real-time data transfer between this new major system and other system within their architecture landscape.
 
-Each micro-service consisted of a set of event processors which would receive an event, process it in a pipeline and sink the event data to an data source or application/system. A request would be received by each service, pass through a dynamic content and event type router (within each service and an actor itself) and be passed off to a master actor which was able to create specific child actors to handle each stage of event processing.
+The architecture landscape, even though polyglot, leant more towards JVM languages and as such, without going into detailed reasoning, we settled on the Akka framework and its Java API to act as the engine room for each micro-service. We chose Akka not just because of the framework's ability for making concurrency easy but also because of the ease of scalability (horizontal and vertical) and the ability to cluster.
+
+Each micro-service consisted of a set of event processors which would receive an event from an existing event-driven enterprise middleware platform or enterprise applaication/system, process it in a pipeline and sink the event data to an data source or other application/system. A request would be received by each service, pass through a dynamic content and event type router (within each service and an actor itself) and be passed off to a master actor which was able to create specific child actors to handle each stage of event processing.
+
+At an abstract level, the anatomy of each micro-service with roughly what is depicted in the illustration below.
 
 ![alt text](../../images/akka_metrics/Akka_Service.png "Micro-service anatomy")
 
