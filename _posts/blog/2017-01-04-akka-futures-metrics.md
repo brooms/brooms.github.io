@@ -16,7 +16,7 @@ The client we were working for was implementing a new major system in a program 
 
 The architecture landscape, even though polyglot, leant more towards JVM languages and as such, without going into detailed reasoning, we settled on the Akka framework and its Java API to act as the engine room for each micro-service. We chose Akka not just because of the framework's ability for making concurrency easy but also because of the ease of scalability (horizontal and vertical) and the ability to cluster.
 
-Each micro-service consisted of a set of event processors which would receive an event from an existing event-driven enterprise middleware platform or enterprise applaication/system, process it in a pipeline and sink the event data to an data source or other application/system. A request would be received by each service, pass through a dynamic content and event type router (within each service and an actor itself) and be passed off to a master actor which was able to create specific child actors to handle each stage of event processing.
+Each micro-service consisted of a set of event processors which would receive an event from an existing event-driven enterprise middleware platform or enterprise applaication/system, process it in a pipeline and sink the event data to a data source or other application/system. A request would be received by each service, pass through a dynamic content and event type router (within each service and an actor itself) and be passed off to a master actor which was able to create specific child actors to handle each stage of event processing.
 
 At an abstract level, the anatomy of each micro-service with roughly what is depicted in the illustration below.
 
@@ -121,7 +121,6 @@ The next step is to flesh out the onReceive method to do something useful. Here 
      metricsRegistry.register(MetricRegistry.name(metric.getKey()),
                               (Metric<Object>) metric::getValue);
 
-   }
    } else if (message instanceof Poll) {
      // TODO: Collect up system metrics here
 
