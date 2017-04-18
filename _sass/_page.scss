@@ -313,8 +313,17 @@ span + .entry-title {
 	margin: ((0px + $doc-line-height) / 2) 0;
 	margin: ((0rem + ($doc-line-height / $doc-font-size)) / 2) 0;
 	width: 100%;
+	background-color: #161616;
 
 	tbody {
+
+		tr:nth-child(even) td {
+			background-color: #181818;
+		}
+
+		tr:nth-child(odd) td {
+			background-color: #121212;
+		}
 
 		tr:hover > td, tr:hover > th {
 			background-color: $table-hover-color;
@@ -324,25 +333,36 @@ span + .entry-title {
 	thead {
 
 		tr:first-child td {
-			border-bottom: 2px solid $table-border-color;
+			//border-bottom: 2px solid $table-border-color;
+			border-bottom: 1px solid #000000;
 		}
+
+		tr:last-child {
+			border-right: 1px solid #000000;
+		}
+	}
+
+	tr td:last-child {
+		border-right: 1px solid #000000;
 	}
 
 	th {
 		padding: (0px + $doc-line-height) / 2;
 		padding: (0rem + ($doc-line-height / $doc-font-size)) / 2;
-		font-family: $alt-font;
-		font-weight: bold;
-		text-align: left;
+		text-align: center;
 		background-color: $table-header-color;
-		border-bottom: 1px solid darken($border-color, 15%);
+		border-bottom: 1px solid #000000;
+		border-left: 1px solid #000000;
+		color: white;
 	}
 
 	td {
-		border-bottom: 1px solid $border-color;
+		border-left: 1px solid #000000;
+		border-bottom: 1px solid #000000;
 		padding: (0px + $doc-line-height) / 2;
 		padding: (0rem + ($doc-line-height / $doc-font-size)) / 2;
-		@include font-size(18);
+		font-size: 12px;
+		//width: 200px;
 	}
 
 	tr, td, th {
