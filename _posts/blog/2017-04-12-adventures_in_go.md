@@ -12,12 +12,13 @@ image:
   feature: java_to_go.jpg
 ---
 
-I had the opportunity recently to use Go in anger and I (mostly) have good things to say. It's easy to learn, extremely powerful, a pleasure to work with and compiles extremely fast. The only
-major issue is the lack of formal structure and process around dependency management. This is something that should improve and mature with time.
+So after being insanely busy developing Java micro-services these last few months and juggling a whole bunch of other projects I've actually found the time to write about something. Whilst I was sandwiched between the Java and NodeJS runtimes, I found the time to actually use Golang in anger and I (mostly) have good things to say. 
+
+Go as a programming language is easy to learn, extremely powerful, a pleasure to work with and compiles extremely fast. The only major issue I found was the lack of formal structure and process around dependency management. This is something that should improve and mature with time.
 
 For software engineers familiar with the Java stack, it is not that scary to make the leap from Java to Go. Here is a few things I learnt along the way that were integral to becoming productive in the language.
 
-At a high level, it's important to note that even though the languages are mostly syntactically similar, they are in some cases fundamentally different.
+At a high level, it's important to note that even though the two languages (Go and Java) are mostly syntactically similar, they are in some cases fundamentally different.
 
 Similar to Java, Go was inspired by C style languages, it is a statically typed, imperative language that is compiled. Like Java, it has inbuilt garbage collection which for most people (like me) who fear memory management and all the demons associated with it, this is a good thing.
 It has an inbuilt concurrency model [(CSP model)](https://en.wikipedia.org/wiki/Communicating_sequential_processes), but it is important to note that it is not an object-oriented language as it lacks a type hierarchy.
