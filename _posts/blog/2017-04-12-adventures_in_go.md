@@ -14,7 +14,7 @@ image:
 
 So after being insanely busy developing Java micro-services these last few months and juggling a whole bunch of other projects I've actually found the time to write about something. Whilst I was sandwiched between the Java and NodeJS runtimes, I found the time to actually use Golang in anger and I (mostly) have good things to say. 
 
-Go as a programming language is easy to learn, extremely powerful, a pleasure to work with and compiles extremely fast. The only major issue I found was the lack of formal structure and process around dependency management. This is something that should improve and mature with time.
+Go (Golang) as a programming language is easy to learn, extremely powerful, a pleasure to work with and compiles extremely fast. The only major issue I found was the lack of formal structure and process around dependency management. This is something that should improve and mature with time.
 
 For software engineers familiar with the Java stack, it is not that scary to make the leap from Java to Go. Here is a few things I learnt along the way that were integral to becoming productive in the language.
 
@@ -629,7 +629,7 @@ A discussion on build tools and dependency management in both languages is proba
 
 Obviously the Java ecosystem is incredibly mature and we are spoilt for choices when it comes to build systems or dependency management tools. Typically, I tend to either use Maven or Gradle, both are exceptionally good at managing third party and transitive dependencies.
 
-Go, however, lacks a consistent model for dependency management and this is an area where the language ecosystem is let down. Dependency management in Go is just not good... at the moment. The community is working on a new dependency management tool called `dep`, which will be the official dependency management tool. As they state on the [wiki](https://github.com/golang/go/wiki/PackageManagementTools), the dep tool is currently being implemented, in pre-alpha state and should be used with caution as "Lots of functionality is knowingly missing or broken".
+Go, however, lacks a consistent model for dependency management and this is an area where the language ecosystem lets us down. Dependency management in Go is just not good... at the moment. The community is working on a new dependency management tool called `dep`, which will be the official dependency management tool. As they state on the [wiki](https://github.com/golang/go/wiki/PackageManagementTools), the dep tool is currently being implemented, in pre-alpha state and should be used with caution as "Lots of functionality is knowingly missing or broken".
 
 For now, you can either use a third-party tool or the existing [`godep`](https://github.com/tools/godep) tool. This tool works by specifying third-party dependencies within a Godeps json file, then by retrieving these dependencies from Github. It sucks. To be honest, I'm very uncomfortable about retrieving production ready third-party dependencies by using `git clone` on a revision tag and to-date have been extremely careful in how I have been retrieving dependencies.
 
