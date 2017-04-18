@@ -112,7 +112,7 @@ A comparison at a glance:
 There is no right or wrong reason to choose Go over Java. In fact, I'm pretty certain now that for any project where Java may be the language du jour, Go can be used in it's place.
 
 I lie a little bit in this blog post, I actually chose Go over C/C++. But as a Java programmer, there was no way in hell I was going to mess around with low level manual memory management and being so rusty in those languages I decided to take the opporunity to teach myself a new language and use it in an operational setting.
-The end-result had to be cross platform compatible too, so C# was out of the question. Since Go embeds the Go runtime into the binary, this seemed like the perfect option. Go isn't exactly cross platform compatible, but this can be effectively managed by cross-compiling for other platforms using Go Docker containers. I was easily able to produce
+The end-result had to be cross platform compatible too, so C# was out of the question (without using mono, embedding the runtime etc). Since Go automatically embeds the Go runtime into the binary, this seemed like the perfect option. Go isn't exactly cross platform compatible, but this can be effectively managed by cross-compiling for other platforms using Go Docker containers. I was easily able to produce
 working executables for MacOS, Solaris and Windows on my Macbook Pro.
 
 In my case, I needed to create an encryption/decryption tool to hand over to a third-party that was able to read from an information source (file, in-flight message etc), encrypt or decrypt the data contained in the information source before outputting the result to another information source.
