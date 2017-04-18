@@ -7,3 +7,7 @@ andy_motovation:
 andy_akka:
   name: Andy
   avatar: brooms_akka_avatar.jpg
+
+andy_go:
+  name: Andy
+  avatar: brooms_golang_avatar.jpg

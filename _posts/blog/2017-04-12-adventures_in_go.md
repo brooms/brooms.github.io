@@ -2,7 +2,7 @@
 layout: post
 title: "Adventures in Go"
 modified:
-author: andy
+author: andy_go
 categories: blog
 excerpt:
 share: true
