@@ -411,7 +411,7 @@ func hash(data []byte) func() uint64 {
 ### Multiple Return Values
 
 Go allows us to return multiple values. In Java, we would typically handle this by returning an Object and encapsulating the values within the object.
-A typical use case I've found for returning multiple values is when returning the value of at an array index we can return the index and value or return an error type if any errors have occurred during execution of a function.
+A typical use case I've found for returning multiple values is when returning the value at an array index, we can return the index and value or return an error type if any errors have occurred during execution of a function.
 
 ```java
 // Java (much more verbose, we need to define a Tuple return type
@@ -476,7 +476,7 @@ func (key *AesKey) GetKey() []byte {
 Unlike Java, Go does not support "Objects" as such. Instead Go uses the `struct` keyword to compose complex types and their interfaces to explicitly define similarities between structs.
 
 ``` java
-// In Java we might have a Person -> Employee hierarchy like this
+// Java
 
 public interface Key {
     byte[] getKey();
